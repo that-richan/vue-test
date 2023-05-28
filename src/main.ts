@@ -1,14 +1,16 @@
 import './assets/main.scss';
 
 import { setupErrorHandler } from "@/config/error-handler";
-import { setupAppProviders } from "@/config/app-providers";
+import { setupAppProviders } from "@/config/providers";
+import { setupDirectives } from "@/config/directives";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+// @ts-ignore
 import App from "./App.vue";
-import { setupDirectives } from "@/config/app-directives";
 
 const app = createApp(App);
+
 setupAppProviders(app);
 setupErrorHandler(app);
 setupDirectives(app);

@@ -9,7 +9,7 @@ because Pinia is very simple and small).
   - withDefaults argument type does not get inferred for some reason
   - defineSlots does not work
   - defineExpose does not work correctly and breaks TS
-  - Custom directives are not recognized when added outside the root component initalization
+- Custom directives are not recognized when added outside the root component initalization
 - Imported Vue Components in TS files are not recognized and don't seem to have a good solution
   - One of the solutions is to add this into a `*.d.ts` file:
     ```ts

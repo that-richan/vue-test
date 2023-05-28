@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { inject, ref } from "vue";
-import type { TestAppConfig } from "@/config/app-providers";
+import type { TestAppConfig } from "@/config/providers";
 import { appConfigKey } from "@/config/inject-keys";
 import { useClicker } from "@/composables/clicker";
 
