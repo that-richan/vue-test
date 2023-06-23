@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { Component as VueComponent, ref } from "vue";
+import { type Component as VueComponent, ref } from "vue";
 import Tab1 from "@/components/tabs/Tab1.vue";
 import Tab2 from "@/components/tabs/Tab2.vue";
 import TabTodo from "@/components/tabs/TabTodo.vue";
 
 const tabs = ["tab1", "tab2", "tab3"] as const;
-const currentTab = ref(tabs[0]);
+const currentTab = ref<typeof tabs[number]>(tabs[0]);
 const tabbedComponents: Record<typeof tabs[number], VueComponent> = {
 	tab1: Tab1,
 	tab2: Tab2,

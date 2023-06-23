@@ -5,7 +5,7 @@ because Pinia is very simple and small).
 
 ## Some notes
 
-- WebStorm has a few bugs with Vue 3.3+.
+- WebStorm has a few bugs with Vue 3.3+. (All fixed in 2023.1.3 thanks to supporting Volar)
   - withDefaults argument type does not get inferred for some reason
   - defineSlots does not work
   - defineExpose does not work correctly and breaks TS
